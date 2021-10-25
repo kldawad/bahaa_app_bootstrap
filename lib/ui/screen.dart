@@ -56,15 +56,19 @@ class _HomeScreenState extends State<HomeScreen> {
           decoration: BoxDecoration(color: Colors.blue),
           children: [
             BootstrapRow(
-              height: 200,
+              // height: 200,
               decoration: BoxDecoration(color: Colors.black),
               children: <BootstrapCol>[
                 BootstrapCol(
                   sizes: _getSize(12, 12, 12, 12, 12),
+                  offsets: _getOffset(0, 0, 0, 0, 0),
                   child: Container(
-                    width: _width,
-                    color: Colors.pink,
-                    height: 200,
+                    color: Colors.orange,
+                    child: Image.asset(
+                      'assets/images/Untitled design (8).png',
+                      fit: BoxFit.fill,
+                      // height: 200,
+                    ),
                   ),
                 ),
               ],
